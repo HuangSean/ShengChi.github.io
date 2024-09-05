@@ -1,0 +1,146 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* 針對特定語言設定字體 */
+body:lang(zh) {
+    font-family: 'Microsoft JhengHei', sans-serif; /* 中文 */
+}
+
+body:lang(en) {
+    font-family: 'Calibri', sans-serif; /* 英文 */
+}
+
+/* 桌面版選單樣式 */
+.top-horizontal-menu ul {
+    position: absolute;    /* relative 相對、absolute 絕對 */
+    left: 10vw;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.top-horizontal-menu li {
+    float: left;
+}
+
+.top-horizontal-menu li a {
+    display: block;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 30px;
+    margin-right: 3vw;    /* 視窗寬度的3%，當視窗不同裝飾呈現不同大小時，vw會自動調整 */
+    text-decoration: none;
+}
+
+.top-horizontal-menu li a:hover {
+    color: rgb(238, 255, 0);
+}
+
+/* 手機版選單樣式 */
+.left-vertical-menu .openbtn {
+    position: absolute;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: transparent;  /* 設定為透明 */
+    color: #f3a808;
+    padding: 10px 15px;
+    border: none;
+    display: none;  /* 預設為隱藏 */
+}
+/* 當 hover 時變色或變暗 */
+.left-vertical-menu .openbtn:hover {
+    color: #fdff92;
+}
+
+.left-vertical-menu .sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 60px;
+    box-shadow: 5px 0 15px rgba(0, 0, 0, 0.3); /* 添加陰影來增強立體感 */
+}
+
+.left-vertical-menu .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    color: #10164b;
+    display: block;
+}
+
+.left-vertical-menu .sidebar a:hover {
+    color: #bb1919;
+}
+
+.left-vertical-menu .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.left-vertical-menu .sidebar.active {
+    width: 150px;
+}
+
+/* 透明遮罩層 */
+.left-vertical-menu .overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+.left-vertical-menu .overlay.active {
+    display: block;
+}
+
+/* 響應式設計語法 */
+/* 在桌面上隱藏手機選單，顯示桌面選單 */
+@media screen and (min-width: 768px) {
+    .top-horizontal-menu {
+        display: block;
+    }
+    .left-vertical-menu {
+        display: none;
+    }
+    
+    .Desktop {
+        display: block;
+    }
+    .Mobile {
+        display: none;
+    }
+}
+
+/* 在手機上隱藏桌面選單，顯示手機選單 */
+@media screen and (max-width: 767px) {
+    .top-horizontal-menu {
+        display: none;
+    }
+    .left-vertical-menu .openbtn {
+        display: block;
+    }
+    
+    .Desktop {
+        display: none;
+    }
+    .Mobile {
+        display: block;
+    }
+}

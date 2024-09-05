@@ -1,0 +1,142 @@
+
+.Background {
+    background-color:rgb(202, 192, 157);
+    background-blend-mode: multiply;
+    padding: 20px;
+    transition: 0.2s;
+    flex-grow: 1;
+    height: 95vh;
+    background-image: url("../images/main.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+}
+.Background.active {
+    margin-left: 150px;
+}
+
+.Resume {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 100px 50px;
+}
+.Person-Photo {
+    position: relative; /* 設定容器為相對定位 */
+    width: 350px; /* 設定容器寬度 */
+    max-width: 600px; /* 設定容器最大寬度 */
+    margin: auto; /* 水平居中 */
+}
+.Person-Photo img {
+    width: 300px;  /* 固定寬度 */
+    height: 500px; /* 固定高度 */
+    object-fit: cover; /* 調整圖片大小以覆蓋容器，保持比例 */
+    border-radius: 10px; /* 圓角效果 */
+
+    -webkit-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+}
+.Photo-Text {
+    position: absolute; /* 設定文字為絕對定位 */
+    bottom: 10%;
+    left: 18%;
+    color: white; /* 文字顏色 */
+    font-size: 24px; /* 文字大小 */
+    font-weight: bold; /* 文字粗體 */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* 文字陰影 */
+}
+
+.Person-Data {
+    width: 80%; /* 區塊寬度設為容器的80% */
+    max-width: 700px; /* 最大寬度設為800px */
+    height: 500px; /* 固定高度300px */
+    margin: 20px auto; /* 上下外邊距20px，水平居中 */
+    padding: 20px; /* 內邊距20px */
+    overflow-y: scroll; /* 當內容超過高度時顯示垂直滾動條 */
+    scrollbar-width: none; /* 設置滾動條的寬度（auto, thin, none） */
+}
+.Common-Tittle-Type {
+    color:rgb(238, 218, 108);
+    font-size: 36px;
+    font-weight: bold; /* 文字粗體 */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* 文字陰影 */
+    margin: 30px 0px 10px 0px;
+}
+
+.About-Me-Content {
+    color:rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: bold; /* 文字粗體 */
+    margin: 10px;
+}
+
+.Expertise-Content {
+    color:rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: bold; /* 文字粗體 */
+    margin: 10px;
+}
+
+.Job-custom-hr {
+    border-top: 2px solid #ffffff; /* 設置線的顏色和粗細 */
+    margin: 20px auto; /* 水平置中並上下留空 */
+}
+.Job-Title {
+    color:rgb(255, 255, 255);
+    font-size: 24px;
+    font-weight: bold;
+    margin: 5px;
+}
+.Job-Duration {
+    color:rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: bold; /* 文字粗體 */
+    font-style: italic;
+    margin: 5px;
+    margin-left: 20px;
+}
+
+.Job-Content {
+    margin-left: 60px;
+}
+.Job-Content-Decimal {
+    color:rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: bold;
+    list-style-type: decimal; /* 使用數字編號 */
+    margin-bottom: 5px;
+}
+.Job-Content-lower-alpha  {
+    color:rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: bold;
+    list-style-type: lower-alpha; /* 使用小寫字母 */
+    margin-left: 20px;
+}
+
+.Education-Tittle {
+    color:rgb(255, 255, 255);
+    font-size: 24px;
+    font-weight: bold; /* 文字粗體 */
+}
+.Education-Content {
+    color:rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: bold; /* 文字粗體 */
+    margin: 10px;
+    margin-left: 40px;
+}
+
+
+
+.small-person_data h3 {
+    color:rgb(255, 255, 255);
+    font-size: 28px;
+    font-weight: bold; /* 文字粗體 */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* 文字陰影 */
+}   
