@@ -41,9 +41,8 @@ body:lang(en) {
 }
 
 /* 手機版選單樣式 */
-.left-vertical-menu .openbtn {
+.openbtn {
     position: absolute;
-    font-size: 20px;
     cursor: pointer;
     background-color: transparent;  /* 設定為透明 */
     color: #f3a808;
@@ -52,38 +51,38 @@ body:lang(en) {
     display: none;  /* 預設為隱藏 */
 }
 /* 當 hover 時變色或變暗 */
-.left-vertical-menu .openbtn:hover {
-    color: #fdff92;
+.openbtn:hover {
+    color: #ff0000;
 }
 
-.left-vertical-menu .sidebar {
+.sidebar {
     height: 100%;
     width: 0;
-    position: fixed;
-    z-index: 1;
     top: 0;
     left: 0;
+    position: fixed;
     background-color: #ffffff;
     overflow-x: hidden;
-    transition: 0.3s;
     padding-top: 60px;
     box-shadow: 5px 0 15px rgba(0, 0, 0, 0.3); /* 添加陰影來增強立體感 */
+    transition: 0.3s;
+    z-index: 1;
 }
 
-.left-vertical-menu .sidebar a {
-    padding: 8px 8px 8px 32px;
+.sidebar a {
+    padding: 20px 0px 10px 10%;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: bold;
-    color: #10164b;
+    color: #0e155a;
     display: block;
 }
 
-.left-vertical-menu .sidebar a:hover {
+.sidebar a:hover {
     color: #bb1919;
 }
 
-.left-vertical-menu .sidebar .closebtn {
+.closebtn {
     position: absolute;
     top: 0;
     right: 25px;
@@ -91,12 +90,12 @@ body:lang(en) {
     margin-left: 50px;
 }
 
-.left-vertical-menu .sidebar.active {
+.sidebar.active {
     width: 150px;
 }
 
 /* 透明遮罩層 */
-.left-vertical-menu .overlay {
+.overlay {
     display: none;
     position: fixed;
     top: 0;
@@ -106,7 +105,7 @@ body:lang(en) {
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 1;
 }
-.left-vertical-menu .overlay.active {
+.overlay.active {
     display: block;
 }
 

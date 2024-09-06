@@ -1,21 +1,21 @@
 function openNav() {
     var sidebar = document.getElementById("sidebar");
-    var overlay = document.getElementsByClassName("overlay");
-    var main = document.getElementById("main");
+    var overlay = document.getElementById("overlay");
+    var Mobile = document.getElementById("Mobile");
 
     sidebar.classList.add("active");
     overlay.classList.add("active");
-    main.classList.add("active");
+    Mobile.classList.add("active");
 }
 
 function closeNav() {
     var sidebar = document.getElementById("sidebar");
-    var overlay = document.getElementsByClassName("overlay");
-    var main = document.getElementById("main");
+    var overlay = document.getElementById("overlay");
+    var Mobile = document.getElementById("Mobile");
 
     sidebar.classList.remove("active");
     overlay.classList.remove("active");
-    main.classList.remove("active");
+    Mobile.classList.remove("active");
 }
 
 // 點擊頁面時自動關閉 sidebar

@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sheng Chi</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main_desktop.css">
+    <link rel="stylesheet" href="css/main_mobile.css">
     <script src="js/sidebar.js"></script>
 </head>
 
@@ -14,10 +15,10 @@
     <!-- 桌面版選單 -->
     <div class="top-horizontal-menu">
         <ul>
-            <li><a href="#About-Me">About me</a></li>
-            <li><a href="#Expertise">Expertise</a></li>
-            <li><a href="#Exprerience">Exprerience</a></li>
-            <li><a href="#Education">Education</a></li>
+            <li><a href="#Desktop-About-Me">About me</a></li>
+            <li><a href="#Desktop-Expertise">Expertise</a></li>
+            <li><a href="#Desktop-Exprerience">Exprerience</a></li>
+            <li><a href="#Desktop-Education">Education</a></li>
         </ul>
     </div>
 
@@ -29,103 +30,177 @@
 
         <div class="sidebar" id="sidebar">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="#About-Me">About me</a>
-            <a href="#Expertise">Expertise</a>
-            <a href="#Exprerience">Exprerience</a>
-            <a href="#Education">Education</a>
+            <a href="#Mobile-About-Me">About me</a>
+            <a href="#Mobile-Expertise">Expertise</a>
+            <a href="#Mobile-Exprerience">Exprerience</a>
+            <a href="#Mobile-Education">Education</a>
         </div>
     </div>
 
 
     <!-- 頁面主要內容 -->
     <div class="main">
-        <div class="Background" id="Background">
-            <div class="Desktop" id="Desktop">
-                <div class="Resume" id="Resume">
-                    <div class="Person-Photo" id="Person-Photo">
-                        <img src="images/PersonPhoto.jpg" alt="個人照">
-                        <div class="Photo-Text" id="Photo-Text">Sheng Chi Huang</div>
+        <div class="Desktop" id="Desktop">
+            <div class="Desktop-Background" id="Background">
+                <div class="Desktop-Resume" id="Desktop-Resume">
+                    <div class="Desktop-Person-Photo" id="Desktop-Person-Photo">
+                        <img src="images/PersonPhoto.jpg" alt="PersonPhoto">
+                        <div class="Desktop-Photo-Text" id="Photo-Text">Sheng Chi Huang</div>
                     </div>
-                    <div class="Person-Data" id="Person-Data">
-                        <h3 class="Common-Tittle-Type" id="About-Me">【About me】</h3>
-                        <p class="About-Me-Content">您好，我是Sean，畢業於聖約翰科技大學電腦與通訊工程系學士，7年的軟體應用工程師經驗、2年以上MIS工程師經驗，我的個性樂觀、認真負責、觀察力強、執行力強與有解決問題能力。</p>
-                        <p class="About-Me-Content">上一份工作的經驗，主要負責中油自助加油專案，使用Linux系統C語言維護與開發，我解決了交易隨時重啟、交易流程加速、交易容易斷線與許多小問題，
-                        從原本每周報修將近30件，我成功降低到每周報修不到5件。在交易速度更快2倍多，是大家都很有感覺。也參與發開信用卡載具、斷線自動授權、感應支付、中油Pay、銀行換金鑰軟體加密。</p>
-                        <p class="About-Me-Content">在測試上要將問題重現並驗證，再整合測試，彙整測試報告，追蹤問題修復進度。還參與組裝到安裝設備，學習並實際去做，以提升對產品熟悉度，並提出要改善硬體設計。
-                        另外經常要面對同事與外部人員，在溝通技巧能力大幅度提升。此外，我還為同事提供技術支援，以確保專案順利且有效率地進行。</p>
-                        <p class="About-Me-Content">我一直認為，不斷學習和自我提升是保持競爭力的關鍵。因此，我不排斥學習專業領域以外的事，這是進一步提升我其他領域專業知識和技能。</p>
+                    <div class="Desktop-Person-Data" id="Person-Data">
+                        <h3 class="Desktop-Common-Tittle-Type" id="Desktop-About-Me">【About me】</h3>
+                        <p class="Desktop-About-Me-Content">
+                            您好，我是Sean，畢業於聖約翰科技大學電腦與通訊工程系學士，以系所第一名畢業並獲得斐陶斐榮譽會員，7年的軟體應用工程師經驗、2年以上MIS工程師經驗，
+                            我的個性樂觀、認真負責、觀察力強、執行力強與有解決問題能力。</p>
+                        <p class="Desktop-About-Me-Content">
+                            上一份工作的經驗，主要負責中油自助加油專案，使用Linux系統C語言維護與開發，我解決了交易隨時重啟、交易流程加速、交易容易斷線與許多小問題，
+                            從原本每周報修將近30件，我成功降低到每周報修不到5件。在交易速度更快2倍多，是大家都很有感覺。也參與發開信用卡載具、斷線自動授權、感應支付、中油Pay、銀行換金鑰軟體加密。</p>
+                        <p class="Desktop-About-Me-Content">
+                            在測試上要將問題重現並驗證，再整合測試，彙整測試報告，追蹤問題修復進度。還參與組裝到安裝設備，學習並實際去做，以提升對產品熟悉度，並提出要改善硬體設計。
+                            另外經常要面對同事與外部人員，在溝通技巧能力大幅度提升。此外，我還為同事提供技術支援，以確保專案順利且有效率地進行。</p>
+                        <p class="Desktop-About-Me-Content">
+                            我一直認為，不斷學習和自我提升是保持競爭力的關鍵。因此，我不排斥學習專業領域以外的事，這是進一步提升我其他領域專業知識和技能。</p>
 
-                        <h3 class="Common-Tittle-Type" id="Expertise">【Expertise】</h3>
-                        <p class="Expertise-Content">C、C#、Python、HTML、CSS</p>
+                        <h3 class="Desktop-Common-Tittle-Type" id="Desktop-Expertise">【Expertise】</h3>
+                        <p class="Desktop-Expertise-Content">C、C#、Python、HTML、CSS</p>
 
-                        <h3 class="Common-Tittle-Type" id="Exprerience">【Exprerience】</h3>
-                        <hr class="Job-custom-hr">
-                        <p  class="Job-Title">創群科技 - Deputy Manager</p>
-                        <p class="Job-Duration">2017/6~2024/6</p>
-                        <ol class="Job-Content">
-                            <li class="Job-Content-Decimal">中油自助加油維護與開發既有的程式。
+                        <h3 class="Desktop-Common-Tittle-Type" id="Desktop-Exprerience">【Exprerience】</h3>
+                        <hr class="Desktop-Job-custom-hr">
+                        <p class="Desktop-Job-Title">創群科技 - Deputy Manager</p>
+                        <p class="Desktop-Job-Duration">2017/6~2024/6</p>
+                        <ol class="Desktop-Job-Content">
+                            <li class="Desktop-Job-Content-Decimal">中油自助加油維護與開發既有的程式。
                                 <ol>
-                                    <li class="Job-Content-lower-alpha">解決多個重啟。如：插信用卡重啟、掛槍重啟、取發票重啟...。</li>
-                                    <li class="Job-Content-lower-alpha">改善整體交易流程加速。</li>
-                                    <li class="Job-Content-lower-alpha">解決問題。如：容易斷線、交易當機、程式卡住...。</li>
-                                    <li class="Job-Content-lower-alpha">開發信用卡載具、斷線自動授權、感應支付、中油Pay、銀行換金鑰軟體化。</li>
+                                    <li class="Desktop-Job-Content-lower-alpha">解決多個重啟。如：插信用卡重啟、掛槍重啟、取發票重啟...。</li>
+                                    <li class="Desktop-Job-Content-lower-alpha">改善整體交易流程加速。</li>
+                                    <li class="Desktop-Job-Content-lower-alpha">解決問題。如：容易斷線、交易當機、程式卡住...。</li>
+                                    <li class="Desktop-Job-Content-lower-alpha">開發信用卡載具、斷線自動授權、感應支付、中油Pay、銀行換金鑰軟體化。</li>
                                 </ol>
                             </li>
-                            <li class="Job-Content-Decimal">收銀機導入自動更版、悠遊卡、悠遊付功能。</li>
-                            <li class="Job-Content-Decimal">銀行端(信用卡)與中油端(捷利卡)的SIT & UAT認證。</li>
-                            <li class="Job-Content-Decimal">使用者測試、整合測試、效能測試、問題重現、問題驗證，彙整測試報告，追蹤問題修復進度。</li>
-                            <li class="Job-Content-Decimal">提供技術支援。如：客訴、維修、支援現場問題、各種疑難雜症。</li>
-                            <li class="Job-Content-Decimal">製作使用手冊、維護手冊。</li>
-                            <li class="Job-Content-Decimal">ISO 27001內部稽核員。</li>
+                            <li class="Desktop-Job-Content-Decimal">收銀機導入自動更版、悠遊卡、悠遊付功能。</li>
+                            <li class="Desktop-Job-Content-Decimal">銀行端(信用卡)與中油端(捷利卡)的SIT & UAT認證。</li>
+                            <li class="Desktop-Job-Content-Decimal">使用者測試、整合測試、效能測試、問題重現、問題驗證，彙整測試報告，追蹤問題修復進度。</li>
+                            <li class="Desktop-Job-Content-Decimal">提供技術支援。如：客訴、維修、支援現場問題、各種疑難雜症。</li>
+                            <li class="Desktop-Job-Content-Decimal">製作使用手冊、維護手冊。</li>
+                            <li class="Desktop-Job-Content-Decimal">ISO 27001內部稽核員。</li>
                         </ol>
 
-                        <hr class="Job-custom-hr">
-                        <p  class="Job-Title">上一國際光電 - MIS工程師</p>
-                        <p class="Job-Duration">2017/4~2017/5</p>
-                        <ol class="Job-Content">
-                            <li class="Job-Content-Decimal">電腦軟硬體維護保養作業。
-                            <li class="Job-Content-Decimal">印表機檢測處理。</li>
-                            <li class="Job-Content-Decimal">例行性監控維護（Server、防火牆、防毒、備份）。</li>
-                            <li class="Job-Content-Decimal">機房內部環境維護，監視器維護調閱。</li>
+                        <hr class="Desktop-Job-custom-hr">
+                        <p class="Desktop-Job-Title">上一國際光電 - MIS工程師</p>
+                        <p class="Desktop-Job-Duration">2017/4~2017/5</p>
+                        <ol class="Desktop-Job-Content">
+                            <li class="Desktop-Job-Content-Decimal">電腦軟硬體維護保養作業。
+                            <li class="Desktop-Job-Content-Decimal">印表機檢測處理。</li>
+                            <li class="Desktop-Job-Content-Decimal">例行性監控維護（Server、防火牆、防毒、備份）。</li>
+                            <li class="Desktop-Job-Content-Decimal">機房內部環境維護，監視器維護調閱。</li>
                         </ol>
 
-                        <hr class="Job-custom-hr">
-                        <p  class="Job-Title">展昇資訊 - 駐點維護工程師</p>
-                        <p class="Job-Duration">2017/4~2017/5</p>
-                        <ol class="Job-Content">
-                            <li class="Job-Content-Decimal">電腦軟硬體維護保養作業。
-                            <li class="Job-Content-Decimal">印表機檢測處理。</li>
-                            <li class="Job-Content-Decimal">公部門特殊系統使用問題處理。</li>
-                            <li class="Job-Content-Decimal">資安事件處理。</li>
-                            <li class="Job-Content-Decimal">會議室視訊處理。</li>
-                            <li class="Job-Content-Decimal">網域AD、mail2000帳號管理。</li>
+                        <hr class="Desktop-Job-custom-hr">
+                        <p class="Desktop-Job-Title">展昇資訊 - 駐點維護工程師</p>
+                        <p class="Desktop-Job-Duration">2017/4~2017/5</p>
+                        <ol class="Desktop-Job-Content">
+                            <li class="Desktop-Job-Content-Decimal">電腦軟硬體維護保養作業。
+                            <li class="Desktop-Job-Content-Decimal">印表機檢測處理。</li>
+                            <li class="Desktop-Job-Content-Decimal">公部門特殊系統使用問題處理。</li>
+                            <li class="Desktop-Job-Content-Decimal">資安事件處理。</li>
+                            <li class="Desktop-Job-Content-Decimal">會議室視訊處理。</li>
+                            <li class="Desktop-Job-Content-Decimal">網域AD、mail2000帳號管理。</li>
                         </ol>
 
-                        <h3 class="Common-Tittle-Type" id="Education">【Education】</h3>
-                        <p class="Education-Tittle">＞ 聖約翰科技大學 電腦與通訊工程系</p>
-                        <p class="Education-Content">2009/9~2013/6 - 學士</p>
-                        <p class="Education-Content">以系所第一名畢業並獲得斐陶斐榮譽會員</p>
-                        <p class="Education-Tittle">＞ 東海高級中學 資訊科</p>
-                        <p class="Education-Content">2006/9~2009/6 - 高中</p>
-                        
+                        <h3 class="Desktop-Common-Tittle-Type" id="Desktop-Education">【Education】</h3>
+                        <p class="Desktop-Education-Tittle">＞ 聖約翰科技大學 電腦與通訊工程系</p>
+                        <p class="Desktop-Education-Content">2009/9~2013/6 - 學士</p>
+                        <p class="Desktop-Education-Content">系所第一名畢業並獲得斐陶斐榮譽會員</p>
+                        <p class="Desktop-Education-Tittle">＞ 東海高級中學 資訊科</p>
+                        <p class="Desktop-Education-Content">2006/9~2009/6 - 高中</p>
+
                     </div>
                 </div>
             </div>
-
-
-
-            <div class="Mobile" id="Mobile">
-                <div class="small-person" id="small-person">
-                    <div class="small-person_photo" id="small-person_photo">
-                    </div>
-                    <div class="small-person_data" id="small-person_data">
-                        <h3>製作中</h3>
-                    </div>
-                </div>
-            </div>
-
-
         </div>
+
+
+        <div class="Mobile" id="Mobile">
+            <div class="Mobile-Background" id="Background">
+                <div class="Mobile-Resume" id="Mobile-Resume">
+
+                    <div class="Mobile-Person-Photo" id="Mobile-Person-Photo">
+                        <img src="images/PersonPhoto1.jpg" alt="PersonPhoto">
+                        <div class="Mobile-Photo-Text" id="Photo-Text">Sheng Chi Huang</div>
+                    </div>
+                    <div class="Mobile-Person-Data" id="Person-Data">
+                        <h3 class="Mobile-Common-Tittle-Type" id="Mobile-About-Me">【About me】</h3>
+                        <p class="Mobile-About-Me-Content">
+                            您好，我是Sean，畢業於聖約翰科技大學電腦與通訊工程系學士，以系所第一名畢業並獲得斐陶斐榮譽會員，7年的軟體應用工程師經驗、2年以上MIS工程師經驗，
+                            我的個性樂觀、認真負責、觀察力強、執行力強與有解決問題能力。</p>
+                        <p class="Mobile-About-Me-Content">
+                            上一份工作的經驗，主要負責中油自助加油專案，使用Linux系統C語言維護與開發，我解決了交易隨時重啟、交易流程加速、交易容易斷線與許多小問題，
+                            從原本每周報修將近30件，我成功降低到每周報修不到5件。在交易速度更快2倍多，是大家都很有感覺。也參與發開信用卡載具、斷線自動授權、感應支付、中油Pay、銀行換金鑰軟體加密。</p>
+                        <p class="Mobile-About-Me-Content">
+                            在測試上要將問題重現並驗證，再整合測試，彙整測試報告，追蹤問題修復進度。還參與組裝到安裝設備，學習並實際去做，以提升對產品熟悉度，並提出要改善硬體設計。
+                            另外經常要面對同事與外部人員，在溝通技巧能力大幅度提升。此外，我還為同事提供技術支援，以確保專案順利且有效率地進行。</p>
+                        <p class="Mobile-About-Me-Content">
+                            我一直認為，不斷學習和自我提升是保持競爭力的關鍵。因此，我不排斥學習專業領域以外的事，這是進一步提升我其他領域專業知識和技能。</p>
+
+
+
+                        <h3 class="Mobile-Common-Tittle-Type" id="Mobile-Expertise">【Expertise】</h3>
+                        <p class="Mobile-Expertise-Content">C、C#、Python、HTML、CSS</p>
+
+                        <h3 class="Mobile-Common-Tittle-Type" id="Mobile-Exprerience">【Exprerience】</h3>
+                        <hr class="Mobile-Job-custom-hr">
+                        <p class="Mobile-Job-Title">創群科技 - Deputy Manager</p>
+                        <p class="Mobile-Job-Duration">2017/6~2024/6</p>
+                        <ol class="Mobile-Job-Content">
+                            <li class="Mobile-Job-Content-Decimal">中油自助加油維護與開發既有的程式。
+                                <ol>
+                                    <li class="Mobile-Job-Content-lower-alpha">解決多個重啟。如：插信用卡重啟、掛槍重啟、取發票重啟...。</li>
+                                    <li class="Mobile-Job-Content-lower-alpha">改善整體交易流程加速。</li>
+                                    <li class="Mobile-Job-Content-lower-alpha">解決問題。如：容易斷線、交易當機、程式卡住...。</li>
+                                    <li class="Mobile-Job-Content-lower-alpha">開發信用卡載具、斷線自動授權、感應支付、中油Pay、銀行換金鑰軟體化。</li>
+                                </ol>
+                            </li>
+                            <li class="Mobile-Job-Content-Decimal">收銀機導入自動更版、悠遊卡、悠遊付功能。</li>
+                            <li class="Mobile-Job-Content-Decimal">銀行端(信用卡)與中油端(捷利卡)的SIT & UAT認證。</li>
+                            <li class="Mobile-Job-Content-Decimal">使用者測試、整合測試、效能測試、問題重現、問題驗證，彙整測試報告，追蹤問題修復進度。</li>
+                            <li class="Mobile-Job-Content-Decimal">提供技術支援。如：客訴、維修、支援現場問題、各種疑難雜症。</li>
+                            <li class="Mobile-Job-Content-Decimal">製作使用手冊、維護手冊。</li>
+                            <li class="Mobile-Job-Content-Decimal">ISO 27001內部稽核員。</li>
+                        </ol>
+
+                        <hr class="Mobile-Job-custom-hr">
+                        <p class="Mobile-Job-Title">上一國際光電 - MIS工程師</p>
+                        <p class="Mobile-Job-Duration">2017/4~2017/5</p>
+                        <ol class="Mobile-Job-Content">
+                            <li class="Mobile-Job-Content-Decimal">電腦軟硬體維護保養作業。
+                            <li class="Mobile-Job-Content-Decimal">印表機檢測處理。</li>
+                            <li class="Mobile-Job-Content-Decimal">例行性監控維護（Server、防火牆、防毒、備份）。</li>
+                            <li class="Mobile-Job-Content-Decimal">機房內部環境維護，監視器維護調閱。</li>
+                        </ol>
+
+                        <hr class="Mobile-Job-custom-hr">
+                        <p class="Mobile-Job-Title">展昇資訊 - 駐點維護工程師</p>
+                        <p class="Mobile-Job-Duration">2017/4~2017/5</p>
+                        <ol class="Mobile-Job-Content">
+                            <li class="Mobile-Job-Content-Decimal">電腦軟硬體維護保養作業。
+                            <li class="Mobile-Job-Content-Decimal">印表機檢測處理。</li>
+                            <li class="Mobile-Job-Content-Decimal">公部門特殊系統使用問題處理。</li>
+                            <li class="Mobile-Job-Content-Decimal">資安事件處理。</li>
+                            <li class="Mobile-Job-Content-Decimal">會議室視訊處理。</li>
+                            <li class="Mobile-Job-Content-Decimal">網域AD、mail2000帳號管理。</li>
+                        </ol>
+
+                        <h3 class="Mobile-Common-Tittle-Type" id="Mobile-Education">【Education】</h3>
+                        <p class="Mobile-Education-Tittle">＞ 聖約翰科技大學 電腦與通訊工程系</p>
+                        <p class="Mobile-Education-Content">2009/9~2013/6 - 學士</p>
+                        <p class="Mobile-Education-Content">系所第一名畢業並獲得斐陶斐榮譽會員</p>
+                        <p class="Mobile-Education-Tittle">＞ 東海高級中學 資訊科</p>
+                        <p class="Mobile-Education-Content">2006/9~2009/6 - 高中</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
 
 </body>
