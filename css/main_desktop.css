@@ -102,19 +102,24 @@
     margin-left: 20px;
 }
 
-.Desktop-Job-Content {
-    margin-left: 60px;
+.Desktop-Job-Content-Title {
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-left: 30px;
 }
 
-.Desktop-Job-Content-Decimal {
+.Desktop-Job-Content {
     color: rgb(255, 255, 255);
     font-size: 18px;
     font-weight: bold;
     list-style-type: decimal;
     margin-bottom: 5px;
+    margin-left: 40px;
 }
 
-.Desktop-Job-Content-lower-alpha {
+.Desktop-Job-Content-lower {
     color: rgb(255, 255, 255);
     font-size: 18px;
     font-weight: bold;
