@@ -63,11 +63,18 @@
     margin: 30px 0px 10px 0px;
 }
 
+.Mobile-About-Me-Title {
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: bold;
+    margin: 20px 0px 0px 10px;
+}
+
 .Mobile-About-Me-Content {
     color: rgb(255, 255, 255);
     font-size: 18px;
     font-weight: bold;
-    margin: 10px;
+    margin: 0px 0px 0px 10px;
 }
 
 
@@ -120,7 +127,7 @@
     color: rgb(255, 255, 255);
     font-size: 18px;
     font-weight: bold;
-    list-style-type: lower-alpha;
+    list-style-type: disc;
     margin-left: 20px;
 }
 
